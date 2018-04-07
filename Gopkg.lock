@@ -36,12 +36,6 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/dis2/bls12"
-  packages = ["."]
-  revision = "03b15c295a52a28f3a5b3daf467854812ca16aa4"
-
-[[projects]]
-  branch = "master"
   name = "github.com/ebuchman/fail-test"
   packages = ["."]
   revision = "95f809107225be108efcf10a3509e4ea6ceef3c4"
@@ -291,8 +285,9 @@
     "server",
     "types"
   ]
-  revision = "46686763ba8ea595ede16530ed4a40fb38f49f94"
-  version = "v0.10.2"
+  revision = "c62aed95f2ce399ec815b0cafe478af002cdc4e6"
+  source = "github.com/Project-Arda/abci"
+  version = "v0.10.3-dev"
 
 [[projects]]
   branch = "master"
@@ -496,6 +491,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "6c3f9b660058db03f0026877b690007e29ea4addde0a2f00a59941563e5bfa06"
+  inputs-digest = "e69e0a34e5d9894fd381c2e337a1b5fcea39a37a0686d25b4764f36033d3535f"
   solver-name = "gps-cdcl"
   solver-version = 1

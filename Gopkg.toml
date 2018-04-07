@@ -54,9 +54,10 @@ ignored = ["github.com/dis2/bls12"]
   name = "github.com/stretchr/testify"
   version = "~1.2.1"
 
-[[constraint]]
-  version = "~0.10.2"
+[[override]]
   name = "github.com/tendermint/abci"
+  source = "github.com/Project-Arda/abci"
+  branch = "tinytx"
 
 [[override]]
   name = "github.com/tendermint/go-crypto"
