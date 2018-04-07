@@ -24,6 +24,8 @@
 #   go-tests = true
 #   unused-packages = true
 
+ignored = ["github.com/dis2/bls12"]
+
 [[constraint]]
   name = "github.com/bgentry/speakeasy"
   version = "~0.1.0"
@@ -56,9 +58,10 @@
   version = "~0.10.2"
   name = "github.com/tendermint/abci"
 
-[[constraint]]
-  version = "~0.5.0"
+[[override]]
   name = "github.com/tendermint/go-crypto"
+  source = "github.com/Project-Arda/go-crypto"
+  revision = "d5c27796ff5a3f29d02340b6dd735428ee2065af"
 
 [[constraint]]
   version = "~0.7.3"
@@ -80,4 +83,3 @@
 [prune]
   go-tests = true
   unused-packages = true
-

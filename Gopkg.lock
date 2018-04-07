@@ -2,6 +2,15 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/Project-Arda/bgls"
+  packages = [
+    "bgls",
+    "curves"
+  ]
+  revision = "677a049c01acc60602f9ea9c8f64067a97986b1a"
+
+[[projects]]
   name = "github.com/bgentry/speakeasy"
   packages = ["."]
   revision = "4aabc24848ce5fd31929f7d1e4ea74d3709c14cd"
@@ -21,9 +30,30 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/dchest/blake2b"
+  packages = ["."]
+  revision = "06006a921c7d13e3fdf63c401cb0e4529a26e6e4"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/dis2/bls12"
+  packages = ["."]
+  revision = "03b15c295a52a28f3a5b3daf467854812ca16aa4"
+
+[[projects]]
+  branch = "master"
   name = "github.com/ebuchman/fail-test"
   packages = ["."]
   revision = "95f809107225be108efcf10a3509e4ea6ceef3c4"
+
+[[projects]]
+  name = "github.com/ethereum/go-ethereum"
+  packages = [
+    "crypto/bn256/cloudflare",
+    "crypto/sha3"
+  ]
+  revision = "329ac18ef617d0238f71637bffe78f028b0f13f7"
+  version = "v1.8.3"
 
 [[projects]]
   name = "github.com/fsnotify/fsnotify"
@@ -183,7 +213,7 @@
   branch = "master"
   name = "github.com/rcrowley/go-metrics"
   packages = ["."]
-  revision = "8732c616f52954686704c8645fe1a9d59e9df7c1"
+  revision = "d932a24a8ccb8fcadc993e5c6c58f93dac168294"
 
 [[projects]]
   name = "github.com/spf13/afero"
@@ -275,6 +305,12 @@
   revision = "d8387025d2b9d158cf4efb07e7ebf814bcce2057"
 
 [[projects]]
+  name = "github.com/tendermint/go-amino"
+  packages = ["."]
+  revision = "42246108ff925a457fb709475070a03dfd3e2b5c"
+  version = "0.9.6"
+
+[[projects]]
   name = "github.com/tendermint/go-crypto"
   packages = [
     ".",
@@ -283,8 +319,8 @@
     "keys/words",
     "keys/words/wordlist"
   ]
-  revision = "c3e19f3ea26f5c3357e0bcbb799b0761ef923755"
-  version = "v0.5.0"
+  revision = "d5c27796ff5a3f29d02340b6dd735428ee2065af"
+  source = "github.com/Project-Arda/go-crypto"
 
 [[projects]]
   name = "github.com/tendermint/go-wire"
@@ -341,8 +377,8 @@
     "version",
     "wire"
   ]
-  revision = "a1dd329d72e78d4770e602359bad5b7b1e8b72a3"
-  version = "v0.18.0-rc1"
+  revision = "4930b61a381b9fb9bc530eb5deb56ea6429a1c3a"
+  version = "v0.18.0"
 
 [[projects]]
   name = "github.com/tendermint/tmlibs"
@@ -366,6 +402,7 @@
   branch = "master"
   name = "golang.org/x/crypto"
   packages = [
+    "blake2b",
     "blowfish",
     "curve25519",
     "nacl/box",
@@ -374,7 +411,8 @@
     "openpgp/errors",
     "poly1305",
     "ripemd160",
-    "salsa20/salsa"
+    "salsa20/salsa",
+    "sha3"
   ]
   revision = "b2aa35443fbc700ab74c586ae79b81c171851023"
 
@@ -390,13 +428,13 @@
     "lex/httplex",
     "trace"
   ]
-  revision = "b3c676e531a6dc479fa1b35ac961c13f5e2b4d2e"
+  revision = "61147c48b25b599e5b561d2e9c4f3e1ef489ca41"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "1d206c9fa8975fb4cf00df1dc8bf3283dc24ba0e"
+  revision = "3b87a42e500a6dc65dae1a55d0b641295971163e"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -423,7 +461,7 @@
   branch = "master"
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
-  revision = "35de2414665fc36f56b72d982c5af480d86de5ab"
+  revision = "ce84044298496ef4b54b4a0a0909ba593cc60e30"
 
 [[projects]]
   name = "google.golang.org/grpc"
@@ -458,6 +496,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "67298e1f8058b85f082dbd32123f2779b11bda282616e595141dba41a8675c39"
+  inputs-digest = "6c3f9b660058db03f0026877b690007e29ea4addde0a2f00a59941563e5bfa06"
   solver-name = "gps-cdcl"
   solver-version = 1
